@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    qmlRegisterUncreatableType<FileInfo>       ("ffmpegFilesInfo", 1, 0, "FileInfo", "Type cannot be created in QML");
-    qmlRegisterUncreatableType<StreamInfo>     ("ffmpegFilesInfo", 1, 0, "StreamInfo", "Type cannot be created in QML");
-    qmlRegisterUncreatableType<StreamDetail>   ("ffmpegFilesInfo", 1, 0, "StreamDetail", "Type cannot be created in QML");
+    qmlRegisterUncreatableType<FileInfo>       ("ffmpegFilesInfo", 1, 0, "FileInfo"     , "Type cannot be created in QML");
+    qmlRegisterUncreatableType<StreamInfo>     ("ffmpegFilesInfo", 1, 0, "StreamInfo"   , "Type cannot be created in QML");
+    qmlRegisterUncreatableType<StreamDetail>   ("ffmpegFilesInfo", 1, 0, "StreamDetail" , "Type cannot be created in QML");
 
     QQmlContext *ctxt = engine.rootContext();
 
